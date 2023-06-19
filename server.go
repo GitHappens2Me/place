@@ -216,6 +216,8 @@ func (sv *Server) setPixel(x, y int, c color.Color) bool {
 		return false
 	}
 	sv.img.Set(x, y, c)
+	// TODO: Pixel tracken und Lightning Invoice anzeigen
+	fmt.Println("Pixel changed")
 	sv.imgBuf = nil
 	return true
 }
